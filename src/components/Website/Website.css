@@ -1,0 +1,25 @@
+.website {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.website-main {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 34px 30px 52px;
+  flex: 1;
+}
+
+@media (max-width: 850px) {
+  .website-main {
+    padding: 24px 20px 38px;
+  }
+}
+
+@media (max-width: 600px) {
+  .website-main {
+    padding: 16px 12px 28px;
+  }
+}

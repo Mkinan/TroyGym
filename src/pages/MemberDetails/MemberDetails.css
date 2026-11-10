@@ -1,0 +1,30 @@
+.profile-card { padding: 28px; background: #242424; border: 1px solid #414141; border-radius: 8px; }
+.profile-top { display: flex; align-items: center; gap: 18px; padding-bottom: 24px; border-bottom: 1px solid #3b3b3b; }
+.avatar { width: 70px; height: 70px; border-radius: 50%; display: grid; place-items: center; color: white; background: #8f171c; }
+.profile-top h2 { margin: 0 0 7px; font-size: 25px; }
+.member-id { color: #ff6267; font-size: 12px; font-weight: 800; letter-spacing: 1px; }
+.registration-info { display: grid; grid-template-columns: repeat(2,1fr); gap: 15px; padding: 23px 0; }
+.registration-info div { display: grid; grid-template-columns: 25px 1fr; gap: 4px 10px; align-items: center; }
+.registration-info svg { grid-row: span 2; color: #e51f26; width: 20px; }
+.registration-info span, .stat-card span { color: #aaa; font-size: 12px; }
+.registration-info strong { font-size: 14px; }
+.section-label { color: #eee; font-size: 12px; letter-spacing: 1.5px; margin: 10px 0 15px; }
+.stats-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; }
+.stat-card { padding: 17px; display: flex; flex-direction: column; gap: 9px; background: #303030; border: 1px solid #414141; border-radius: 6px; }
+.stat-card strong { font-size: 19px; color: #fff; }
+.detail-actions { display: flex; gap: 9px; }
+.delete-row { display: flex; justify-content: space-between; align-items: center; gap: 15px; padding: 20px 3px 0; color: #999; font-size: 12px; }
+.text-delete { display: inline-flex; align-items: center; gap: 7px; color: #ff777b; border: 0; background: transparent; font-size: 12px; }
+
+@media (max-width: 850px) { .stats-grid { grid-template-columns: repeat(2,1fr); } }
+@media (max-width: 600px) {
+  .profile-card { padding: 18px; }
+  .profile-top h2 { font-size: 20px; }
+  .registration-info { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; }
+  .stat-card { padding: 13px; }
+  .stat-card strong { font-size: 16px; }
+  .detail-actions { width: 100%; }
+  .detail-actions .btn { flex: 1; padding: 11px 9px; font-size: 12px; }
+  .delete-row { align-items: flex-start; flex-direction: column; }
+}

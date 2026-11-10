@@ -1,0 +1,18 @@
+.contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.contact-copy { padding: 25px; }
+.contact-copy h1 { font-size: clamp(29px,4vw,43px); margin: 0; font-weight: 900; letter-spacing: -1px; }
+.contact-copy h1 span { color: #e51f26; }
+.red-rule { width: 90px; height: 4px; margin: 17px 0 23px; background: #e51f26; }
+.contact-intro { max-width: 390px; margin: 23px 0 28px; color: #c5c5c5; line-height: 1.8; font-size: 14px; }
+.contact-item { display: flex; align-items: center; gap: 16px; margin: 20px 0; }
+.contact-item > svg { width: 23px; color: #e51f26; }
+.contact-item div { display: grid; gap: 5px; }
+.contact-item strong { font-size: 13px; }
+.contact-item span { color: #aaa; font-size: 13px; }
+.contact-photo { min-height: 390px; border-radius: 7px; background: linear-gradient(90deg,rgba(0,0,0,.1),rgba(0,0,0,.2)),url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1100&q=85") center/cover; }
+
+@media (max-width: 600px) {
+  .contact-layout { grid-template-columns: 1fr; gap: 20px; }
+  .contact-copy { padding: 15px 5px; }
+  .contact-photo { min-height: 250px; }
+}

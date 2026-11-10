@@ -1,0 +1,10 @@
+.table-actions { display: flex; gap: 7px; }
+.icon-action { display: inline-flex; align-items: center; gap: 5px; padding: 7px 9px; color: #ddd; border: 1px solid #555; background: #303030; border-radius: 4px; font-size: 11px; }
+.icon-action:hover { border-color: #e51f26; }
+.view-action { background: #a9151b; border-color: #a9151b; color: white; }
+.delete-action { color: #ff777b; }
+.id-cell { color: #ff555b !important; font-weight: 800; }
+
+@media (max-width: 600px) {
+  .table-actions { flex-wrap: wrap; }
+}

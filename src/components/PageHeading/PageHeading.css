@@ -1,0 +1,9 @@
+.page-heading-shared { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 28px; }
+.page-heading-shared h1 { font-size: clamp(29px,4vw,43px); margin: 0; font-weight: 900; letter-spacing: -1px; }
+.page-heading-shared h1 span { color: #e51f26; }
+.eyebrow { color: #e51f26; font-size: 11px; font-weight: 800; letter-spacing: 2.5px; margin: 0 0 13px; }
+
+@media (max-width: 600px) {
+  .page-heading-shared { align-items: flex-start; flex-direction: column; margin-bottom: 22px; }
+  .page-heading-shared > .btn { width: 100%; }
+}
